@@ -1,86 +1,51 @@
-//Домашняя работа 2.3
 
-//задание 1
-let password = String(prompt('Введите пароль'));
+//Домашняя работа 2.4
 
-if (password === 'пароль') {
-    alert('Пароль введен верно');
-} else {
-    alert('Пароль введен не верно');
+//Задание 1
+
+let times = 0;
+while (times < 2) {
+    console.log("Привет");
+    times++;
+}
+
+//Задание 2
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
 }
 
 
+//Задание 3
 
+for (let a = 7; a <= 22; a++) {
+    console.log(a);
+}
 
-//задание 2
-let c = 6;
-(c >= 0 && c <= 10) ? console.log('Верно') : console.log('Не верно');
+//Задание 4
 
+const salary = {
+    Коля: 'зарплата 200$',
+    Вася: 'зарплата 300$',
+    Петя: 'зарплата 400$',
+}
 
-
-
-
-//задание 3
-let d = 90;
-let e = 8;
-
-if (d > 100 || e > 100) {
-    console.log('Правильно!');
-} else {
-    console.log('Неправильно.');
+for (let key in salary) {
+    console.log(`${key}: ${salary[key]}`);
 }
 
 
-//задание 4
-let a = '2';
-let b = '3';
-alert(+a + +b);
+//Задание 5
+
+for (let n = 1000, num = 5; n > 50; num++) {
+
+    n /= 2;
+    console.log(n);
+}
 
 
+//Задание 6
 
-
-//задание 5
-let month = String(prompt('Введите день месяца'));
-switch (month) {
-    case '1':
-        alert('Январь');
-        break;
-    case '2':
-        alert('Февраль');
-        break;
-    case '3':
-        alert('Март');
-        break;
-    case '4':
-        alert('Апрель');
-        break;
-    case '5':
-        alert('Май');
-        break;
-    case '6':
-        alert('Июнь');
-        break;
-    case '7':
-        alert('Июль');
-        break;
-    case '8':
-        alert('Август');
-        break;
-    case '9':
-        alert('Сентябрь');
-        break;
-    case '10':
-        alert('Октябрь');
-        break;
-    case '11':
-        alert('Ноябрь');
-        break;
-    case '12':
-        alert('Декабрь');
-        break;
-
-
-    default:
-        alert('Что-то не то');
-        break;
+for (let i = 5; i <= 31; i += 7) {
+    console.log(`Сегодня пятница ${i}-е число. Необходимо подготовить отчет.  `);
 }
