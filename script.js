@@ -1,57 +1,51 @@
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+
+//Домашняя работа 2.4
+
+//Задание 1
+
+let times = 0;
+while (times < 2) {
+    console.log("Привет");
+    times++;
+}
+
+//Задание 2
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
 
 
-const year = alert('Год выпуска первого Iphone - 2007');
+//Задание 3
 
-const name = alert('Имя создателя JavaScript - Brandan Eich');
+for (let a = 7; a <= 22; a++) {
+    console.log(a);
+}
 
+//Задание 4
 
-//---Если задаю переменные a,b возникает конфликт---
-let x = 10;
-let y = 2;
-alert(x + y);
-alert(x - y);
-alert(x * y);
-alert(x / y);
+const salary = {
+    Коля: 'зарплата 200$',
+    Вася: 'зарплата 300$',
+    Петя: 'зарплата 400$',
+}
 
-let result = alert(2 ** 5);
-
-let b = 9;
-let c = 2;
-alert(b % c);
-
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
-
-let age = prompt('Сколько вам лет?');
-alert('Вам ' + age + ' лет!')
+for (let key in salary) {
+    console.log(`${key}: ${salary[key]}`);
+}
 
 
+//Задание 5
 
-user = {
-    name: 'Bob',
-    age: 30,
-    isAdmin: true
-};
+for (let n = 1000, num = 5; n > 50; num++) {
+
+    n /= 2;
+    console.log(n);
+}
 
 
-user['city of residence'] = "Moscow";
+//Задание 6
 
-user.age = 35;
-
-delete user['city of residence'];
-
-let info = prompt('Какую информацию хотите узнать о пользователе?');
-alert(user[info]);
-
-let username = prompt('Введите ваше имя:');
-alert(`Привет, ${username} !`);
+for (let i = 5; i <= 31; i += 7) {
+    console.log(`Сегодня пятница ${i}-е число. Необходимо подготовить отчет.  `);
+}

@@ -115,4 +115,67 @@ body {
   text-align: left;
   bottom: 32px;
   left: 32px;
+}
+
+.head_button:hover {
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.container_game1:hover {
+  animation: rotate-vert-center 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+.container_game2:hover {
+  animation: rotate-vert-center 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+.container_game3:hover {
+  animation: rotate-vert-center 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+@keyframes rotate-vert-center {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .head {
+    height: 735px;
+  }
+  .head_title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .head_text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .info {
+    flex-wrap: wrap;
+    height: 1221px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }/*# sourceMappingURL=style.css.map */
